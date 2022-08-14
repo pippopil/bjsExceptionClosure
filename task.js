@@ -25,7 +25,7 @@ function validateCount (unParseNumber) {
 class Triangle {
     constructor(a, b, c) {
         if (a + b < c || a + c < b || b + c < a) {
-            throw new Error("Треугольник с такими сторонами не существует!");
+            throw new Error("Треугольник с такими сторонами не существует");
         }
         this.a = a;
         this.b = b;
@@ -50,11 +50,11 @@ function getTriangle(aSide, bSide, cSide) {
     } catch (error) {
         return  new Object({
             getPerimeter() {
-                return "Ошибка! Такой треугольник не существует";
+                return "Ошибка! Треугольник не существует";
             },
 
             getArea() {
-                return "Ошибка! Такой треугольник не существует";
+                return "Ошибка! Треугольник не существует";
             }
         });
     }
